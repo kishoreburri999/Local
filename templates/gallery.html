@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Memories 📸</title>
+    <style>
+        body {
+            background: #ff7eb3;
+            text-align: center;
+            font-family: Arial;
+            color: white;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+        img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            margin: 15px;
+            border-radius: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Our Beautiful Memories ❤️</h1>
+
+<img src="{{ url_for('static', filename='images/photo1.jpg') }}">
+<img src="{{ url_for('static', filename='images/photo2.jpg') }}">
+
+<br><br>
+
+<button onclick="location.href='/love'">Back to Letter 💌</button>
+
+</body>
+</html>
